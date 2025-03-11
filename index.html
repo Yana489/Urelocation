@@ -1,170 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Urelocation</title>
-</head>
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__container">
-        <div class="header__content">
-          <a href="" class="header__logo"><img src="img/header/urelocation.svg" alt="Logo"></a>
-          <div class="header__vertical-line"></div>
-          <div class="header__text">One platform meeting all your relocation needs</div>
-        </div>
-        <nav class="header__menu menu">
-          <ul class="menu__list">
-             <li class="menu__item">
-                <a href="#" class="menu__link">Home</a>
-             </li>
-             <li class="menu__item">
-                <a href="#" class="menu__link">Services<img src="img/icons/arrow-down.svg" alt=""></a>
-                <ul class="menu__sub-list">
-                  <li class="menu__sub-item">
-                    <a href="" class="menu__sub-link">Global Talent Vise</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Urelocation</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__brand">
+            <a href="#" class="header__logo">
+              <img src="img/header/logo.svg" alt="Logo" />
+            </a>
+            <div class="header__divider"></div>
+            <div class="header__tagline">
+              One platform meeting all your relocation needs
+            </div>
+          </div>
+          <nav class="header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item nav__item--dropdown">
+                <div class="nav__link nav__link--dropdown" id="dropdownLink">
+                  Services<img src="img/icons/arrow-down.svg" alt="Dropdown" />
+                </div>
+                <ul class="nav__sublist" id="dropdownList">
+                  <li class="nav__subitem">
+                    <div class="nav__sublink">Global Talent Visa</div>
                   </li>
-                  <li class="menu__sub-item">
-                    <a href="" class="menu__sub-link">Post-relocation</a>
+                  <li class="nav__subitem">
+                    <div class="nav__sublink">Post-relocation</div>
                   </li>
-                  <li class="menu__sub-item">
-                    <a href="" class="menu__sub-link">Settlement in the UK</a>
+                  <li class="nav__subitem">
+                    <div class="nav__sublink">Settlement in the UK</div>
                   </li>
                 </ul>
-             </li>
-             <li class="menu__item">
-                <a href="#" class="menu__link">Blog</a>
-             </li>
-             <li class="menu__item">
-              <a href="#" class="menu__link">Contact</a>
-           </li>
-          </ul>
-        </nav>
-        <a href="" class="header__button"><img src="img/icons/check.svg" alt="Icon">Take a scoring test</a>
-        <div class="header__burger">
-          <span></span>
-        </div>
-      </div>
-    </header>
-   <main class="page">
-    <div class="page__main-block main-block">
-       <div class="main-block__container">
-          <div class="main-block__body">
-             <div class="main-block__ellipse"></div>
-             <div class="main-block__title">One platform meeting <span>all your relocation</span> needs</div>
-             <h2 class="main-block__sub-title">
-               Get a Global Talent Visa and relocate to the UK. Start your journey now
-             </h2>
-             <div class="main-block__content">
-                <a href="" class="main-block__button"><img src="img/icons/check.svg" alt="Icon">Take a scoring test</a>
-                <div class="main-block__text">Evaluate your chances and get detailed feedback from our team</div>
-             </div>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="header__button">
+            <img src="img/icons/check.svg" alt="Icon" />Take a scoring test
+          </a>
+          <div class="header__burger">
+            <span></span>
           </div>
-          <div class="main-block__image">
-          <img src="img/main/background.png" alt="background">
-       </div>  
-       </div>
-       <div class="main-block__items">
-         <a href="" class="main-block__item"><img src="img/main/01.svg" alt=""></a>
-         <a href="" class="main-block__item"><img src="img/main/02.svg" alt=""></a>
-         <a href="" class="main-block__item"><img src="img/main/03.svg" alt=""></a>
-         <a href="" class="main-block__item"><img src="img/main/04.svg" alt=""></a>
-         <a href="" class="main-block__item"><img src="img/main/05.svg" alt=""></a>
-         <a href="" class="main-block__item"><img src="img/main/06.svg" alt=""></a>
-         <a href="" class="main-block__item"><img src="img/main/07.svg" alt=""></a>
-         <a href="" class="main-block__item"><img src="img/main/08.svg" alt=""></a>
-         <a href="" class="main-block__item"><img src="img/main/09.svg" alt=""></a>
-       </div>
-    </div>
-    <div class="page__immigration immigration">
-      <div class="immigration__container">
-        <div class="immigration__header header-block">
-          <h1 class="header-block__title">Immigration made easy</h1>
-          <h2 class="header-block__sub-title">
-            Urelocation simplifies the visa process for you and your international employees. <br>
-             We’ll handle the fine details so you can focus on other tasks
-          </h2>
         </div>
-        <div class="immigration__block block">
-          <div class="block__content">
-            <div class="block__title">Fast Service</div>
-            <div class="block__text">
-               We research, build, submit, and get approved visas in a fraction
-               of the time while working around your timelines.
+      </header>
+      <main class="page">
+        <div class="page__main-block main-block">
+          <div class="main-block__container">
+              <div class="main-block__body">
+                  <div class="main-block__content">
+                      <div class="main-block__ellipse"></div>
+                      <div class="main-block__title">
+                          One platform meeting <span>all your relocation</span> needs
+                      </div>
+                      <h2 class="main-block__subtitle">
+                          Get a Global Talent Visa and relocate to the UK. Start your journey now
+                      </h2>
+                      <div class="main-block__actions">
+                          <a href="#" class="main-block__button">
+                              <img src="img/icons/check.svg" alt="Icon" />Take a scoring test
+                          </a>
+                          <div class="main-block__text">
+                              Evaluate your chances and get detailed feedback from our team
+                          </div>
+                      </div>
+                  </div>
+                  <div class="main-block__image">
+                      <img src="img/main/background.png" alt="background" />
+                  </div>
+              </div>
+              <div class="main-block__items">
+                  <div class="main-block__item">
+                      <img src="img/main/01.svg" alt="" />
+                  </div>
+                  <div class="main-block__item">
+                      <img src="img/main/02.svg" alt="" />
+                  </div>
+                  <div class="main-block__item">
+                      <img src="img/main/03.svg" alt="" />
+                  </div>
+                  <div class="main-block__item">
+                      <img src="img/main/04.svg" alt="" />
+                  </div>
+                  <div class="main-block__item">
+                      <img src="img/main/05.svg" alt="" />
+                  </div>
+                  <div class="main-block__item">
+                      <img src="img/main/06.svg" alt="" />
+                  </div>
+                  <div class="main-block__item">
+                      <img src="img/main/07.svg" alt="" />
+                  </div>
+                  <div class="main-block__item">
+                      <img src="img/main/08.svg" alt="" />
+                  </div>
+                  <div class="main-block__item">
+                      <img src="img/main/09.svg" alt="" />
+                  </div>
               </div>
           </div>
-          <div class="block__image-circle">
-            <div class="block__circle"></div>
-            <div class="block__image"><img src="img/immigration/01.png" alt="Service"></div>
-          </div>
-        </div>
-        <div class="immigration__block block">
-          <div class="block__image-ellipse">
-            <div class="block__image"><img src="img/immigration/02.png" alt="Control"></div>
-            <div class="block__ellipse_empty"></div>
-        </div>
-          <div class="block__content">
-            <div class="block__title">Full control and visibility</div>
-            <div class="block__text">
-               Our intuitive platform guides you and your employee through every step of the immigration process,
-               with at-a-glance status updates along the way.
-              </div>
-          </div> 
-        </div>
-        <div class="immigration__block block">
-          <div class="block__content">
-            <div class="block__title">Personalized case managers</div>
-            <div class="block__text">
-               Feel confident with our team of global mobility experts.
-               They’re on hand to answer all your questions, letting you focus on what really matters.
-              </div>
-          </div>
-          <div class="block__image-ellipse">
-          <div class="block__image"><img src="img/immigration/03.png" alt="Experts"></div>
-          <div class="block__ellipse_full"></div>
-        </div>
-        </div>
       </div>
-    </div>
-    <div class="page__start start">
-      <div class="start__container">
-        <div class="start__header block-header">
-          <h1 class="block-header__title">Who has relocated with the help of Immigram?</h1>
-          <h2 class="block-header__sub-title">You can be next! Start your relocation journey now</h2>
-        </div>
-        <div class="start__slider-wrapper">
-          <button id="prev-slide" class="start__icon"><img src="img/icons/arrow-left.svg" alt=""></button>
-          <div class="start__items">
-            <div class="start__item">
-              <div class="start__image"><img src="img/start./01.png" alt="img"></div>
-              <div class="start__name">Developer</div>
+        <div class="page__immigration immigration">
+          <div class="immigration__container">
+            <div class="immigration__header header-block">
+              <h1 class="header-block__title">Immigration made easy</h1>
+              <h2 class="header-block__sub-title">
+                Urelocation simplifies the visa process for you and your
+                international employees. <br />
+                We’ll handle the fine details so you can focus on other tasks
+              </h2>
             </div>
-            <div class="start__item">
-              <div class="start__image"><img src="img/start./02.png" alt="img"></div>
-              <div class="start__name">Data scientists</div>
+            <div class="immigration__block block">
+              <div class="block__content">
+                <div class="block__title">Fast Service</div>
+                <div class="block__text">
+                  We research, build, submit, and get approved visas in a
+                  fraction of the time while working around your timelines.
+                </div>
+              </div>
+              <div class="block__image-circle">
+                <div class="block__circle"></div>
+                <div class="block__image">
+                  <img src="img/immigration/01.png" alt="Service" />
+                </div>
+              </div>
             </div>
-            <div class="start__item">
-              <div class="start__image"><img src="img/start./03.png" alt="img"></div>
-              <div class="start__name">UI designer</div>
+            <div class="immigration__block block">
+              <div class="block__image-ellipse">
+                <div class="block__image">
+                  <img src="img/immigration/02.png" alt="Control" />
+                </div>
+                <div class="block__ellipse block__ellipse--empty"></div>
+              </div>
+              <div class="block__content">
+                <div class="block__title">Full control and visibility</div>
+                <div class="block__text">
+                  Our intuitive platform guides you and your employee through
+                  every step of the immigration process, with at-a-glance status
+                  updates along the way.
+                </div>
+              </div>
             </div>
-            <div class="start__item">
-              <div class="start__image"><img src="img/start./04.png" alt="img"></div>
-              <div class="start__name">Game developer</div>
-            </div>
-            <div class="start__item">
-              <div class="start__image"><img src="img/start./05.png" alt="img"></div>
-              <div class="start__name">Product manager</div>
+            <div class="immigration__block block">
+              <div class="block__content">
+                <div class="block__title">Personalized case managers</div>
+                <div class="block__text">
+                  Feel confident with our team of global mobility experts.
+                  They’re on hand to answer all your questions, letting you
+                  focus on what really matters.
+                </div>
+              </div>
+              <div class="block__image-ellipse">
+                <div class="block__image">
+                  <img src="img/immigration/03.png" alt="Experts" />
+                </div>
+                <div class="block__ellipse block__ellipse--full"></div>
+              </div>
             </div>
           </div>
-          <button id="next-slide" class="start__icon"><img src="img/icons/arrow-right.svg" alt=""></button>
         </div>
-      </div>
+        <div class="page__start start">
+          <div class="start__container">
+            <div class="start__header block-header">
+              <h1 class="block-header__title">
+                Who has relocated with the help of Immigram?
+              </h1>
+              <h2 class="block-header__sub-title">
+                You can be next! Start your relocation journey now
+              </h2>
+            </div>
+            <div class="start__slider-wrapper">
+              <button id="prev-slide" class="start__icon">
+                <img src="img/icons/arrow-left.svg" alt="" />
+              </button>
+              <div class="start__items">
+                <div class="start__item">
+                  <div class="start__image">
+                    <img src="img/start/01.png" alt="img" />
+                  </div>
+                  <div class="start__name">Developer</div>
+                </div>
+                <div class="start__item">
+                  <div class="start__image">
+                    <img src="img/start/02.png" alt="img" />
+                  </div>
+                  <div class="start__name">Data scientists</div>
+                </div>
+                <div class="start__item">
+                  <div class="start__image">
+                    <img src="img/start/03.png" alt="img" />
+                  </div>
+                  <div class="start__name">UI designer</div>
+                </div>
+                <div class="start__item">
+                  <div class="start__image">
+                    <img src="img/start/04.png" alt="img" />
+                  </div>
+                  <div class="start__name">Game developer</div>
+                </div>
+                <div class="start__item">
+                  <div class="start__image">
+                    <img src="img/start/05.png" alt="img" />
+                  </div>
+                  <div class="start__name">Product manager</div>
+                </div>
+              </div>
+              <button id="next-slide" class="start__icon">
+                <img src="img/icons/arrow-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="page__route route">
+          <div class="route__container">
+            <div class="route__header header-block">
+              <h1 class="header-block__title">
+                How can I start my <br />
+                Global Talent Visa case?
+              </h1>
+              <h2 class="header-block__sub-title">
+                Is here to guide you on every step of preparing a case and
+                becoming a Global Talent. To start your UK relocation journey
+                choose a preferred route on our Platform:
+              </h2>
+            </div>
+            <div class="route__items">
+              <div class="route__item item-route">
+                <div class="item-route__price">£5,500</div>
+                <div class="item-route item-block">
+                  <img
+                    class="item-block__icon"
+                    src="img/icons/route/1.svg"
+                    alt="1"
+                  />
+                  <div class="item-block__text">
+                    Paid in 2 instalments — pre-payment when signing the
+                    contract and post-payment after receiving the Endorsement.
+                  </div>
+                </div>
+                <div class="item-route item-block">
+                  <img
+                    class="item-block__icon"
+                    src="img/icons/route/2.svg"
+                    alt="2"
+                  />
+                  <div class="item-block__text">
+                    Paid in 5 five equal instalments first of which is payable
+                    when signing the contract, and the remaining four payments
+                    with an interval of one month.
+                  </div>
+                </div>
+                <p class="item-route__text">
+                  *In case of the second failed attempt to get the Endorsement,
+                  you are entitled to a 70% refund of the amount payed.
+                </p>
+                <p class="item-route__text">
+                  *Pay the entire amount and receive an extra 15% discount.
+                </p>
+                <a href="#" class="item-route__button">Choose</a>
+              </div>
+              <div class="route__item-ellipse route__item-ellipse--empty"></div>
+              <div class="route__item item-route">
+                <div class="item-route__price">£4,000</div>
+                <div class="item-route item-block">
+                  <img
+                    class="item-block__icon"
+                    src="img/icons/route/1.svg"
+                    alt="1"
+                  />
+                  <div class="item-block__text">
+                    Paid in 2 instalments — pre-payment when signing the
+                    contract and post-payment after receiving the Endorsement.
+                  </div>
+                </div>
+                <div class="item-route item-block">
+                  <img
+                    class="item-block__icon"
+                    src="img/icons/route/2.svg"
+                    alt="2"
+                  />
+                  <div class="item-block__text">
+                    Paid in 5 five equal instalments first of which is payable
+                    when signing the contract, and the remaining four payments
+                    with an interval of one month.
+                  </div>
+                </div>
+                <p class="item-route__text">
+                  *Pay the entire amount and receive an extra 15% discount.
+                </p>
+                <p class="item-route__text">*Non-refundable rate</p>
+                <a
+                  href="#"
+                  class="item-route__button item-route__button--second"
+                  >Choose</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page__platform platform">
+          <div class="platform__container">
+            <div class="platform__header header-block">
+              <h1 class="header-block__title">
+                What is <br />
+                URElocation Platform?
+              </h1>
+              <div class="header-block__second-title">Full transparency</div>
+              <h2 class="header-block__sub-title">
+                Live dashboard overviewing the full process
+              </h2>
+            </div>
+            <div class="platform-buttons">
+              <button class="platform-buttons button">clear statuses</button>
+              <button class="platform-buttons button">timeline</button>
+              <button class="platform-buttons button">steps</button>
+              <button class="platform-buttons button">progress</button>
+            </div>
+          </div>
+        </div>
+        <div class="page__steps steps">
+          <div class="steps__container">
+            <div class="steps__block block-steps">
+              <img
+                class="block-steps__logo"
+                src="img/icons/steps/logo.svg"
+                alt="Urelocation"
+              />
+              <div class="block-steps__content select">
+                <div class="select__item">
+                  <img src="img/icons/steps/visa.svg" alt="Visa-logo" />
+                  <div class="select__text">Visa</div>
+                  <div class="select___percentage">4%</div>
+                </div>
+                <div class="select__item">
+                  <img src="img/icons/steps/exta.svg" alt="Extra-logo" />
+                  <div class="select__text">Extra</div>
+                </div>
+                <div class="select__item">
+                  <img src="img/icons/steps/docs.svg" alt="Docs-logo" />
+                  <div class="select__text">Docs</div>
+                </div>
+                <div class="select__item">
+                  <img src="img/icons/steps/help.svg" alt="Help-logo" />
+                  <div class="select__text">Help</div>
+                </div>
+                <div class="select__item">
+                  <img src="img/icons/steps/settings.svg" alt="Settings-logo" />
+                  <div class="select__text">Settings</div>
+                </div>
+              </div>
+              <div class="block-steps__notification">
+                <img src="img/icons/steps/bell.svg" alt="Bell" />
+                <div class="block-steps__notification-text">
+                  <div class="block-steps__notification-title">
+                    Notification
+                  </div>
+                  <div class="block-steps__notification-sub-title">
+                    New comments
+                  </div>
+                </div>
+                <img src="img/icons/steps/3.svg" alt="Three" />
+                <img src="img/icons/steps/arrow.svg" alt="Arrow" />
+              </div>
+              <div class="block-steps__user">
+                <img src="img/icons/steps/user.svg" alt="User" />
+                <div class="block-steps__user-info">
+                  <div class="block-steps__user-name">Yevhen Craft</div>
+                  <div class="block-steps__user-email">
+                    YevhenCraft@gmail.com
+                  </div>
+                </div>
+                <img
+                  class="block-steps__user-icon-exit"
+                  src="img/icons/steps/exit.svg"
+                  alt="Exit"
+                />
+              </div>
+            </div>
+            <div class="steps__block block-screen">
+              <div class="block-screen__greeting">
+                <div class="block-screen__greeting-title">
+                  Good morning, Yevhen!
+                </div>
+                <div class="block-screen__greeting-button">
+                  <img src="img/icons/steps/bell.svg" alt="Bell" />
+                  <div class="block-screen__greeting-button-text">
+                    Last notification
+                  </div>
+                  <img src="img/icons/steps/3.svg" alt="Three" />
+                  <img src="img/icons/steps/arrow.svg" alt="Arrow" />
+                </div>
+              </div>
+              <div class="block-screen__sub-title">
+                We collected all steps below, see progress and fill out forms
+              </div>
+              <div class="block-screen__forms">
+                <div class="block-screen__form">
+                  <img
+                    class="block-screen__form-icon"
+                    src="img/icons/steps/profile.svg"
+                    alt="Profile"
+                  />
+                  <div class="block-screen__form-text">
+                    <div class="block-screen__form-title">External profile</div>
+                    <div class="block-screen__form-sub-title">
+                      Describe your contribution to tech industry
+                    </div>
+                  </div>
+                  <button class="block-screen__form-button-form">
+                    Fill form
+                  </button>
+                </div>
+                <div class="block-screen__form">
+                  <img
+                    class="block-screen__form-icon"
+                    src="img/icons/steps/journey.svg"
+                    alt="Journey"
+                  />
+                  <div class="block-screen__form-text">
+                    <div class="block-screen__form-title">
+                      Professional journey
+                    </div>
+                    <div class="block-screen__form-sub-title">
+                      Describe your contribution to tech industry
+                    </div>
+                  </div>
+                  <button
+                    class="block-screen__form-button block-screen__form-button__external"
+                  >
+                    <img src="img/icons/steps/lock.svg" alt="Lock" /> Fill
+                    external
+                  </button>
+                </div>
+                <div class="block-screen__form">
+                  <img
+                    class="block-screen__form-icon"
+                    src="img/icons/steps/referees.svg"
+                    alt="Referees"
+                  />
+                  <div class="block-screen__form-text">
+                    <div class="block-screen__form-title">Referees</div>
+                    <div class="block-screen__form-sub-title">
+                      Describe your contribution to tech industry
+                    </div>
+                  </div>
+                  <button class="block-screen__form-button">
+                    <img src="img/icons/steps/lock.svg" alt="" />Fill prof,
+                    journey
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="steps-picture" src="img/steps/steps.svg" alt="Picture" />
+        </div>
+        <div class="page__chance chance">
+          <div class="chance__container">
+            <div class="chance__header block-header">
+              <h1 class="block-header__title">Not sure if you're eligible?</h1>
+              <h2 class="block-header__sub-title">
+                Calculate your chances and get detailed feedback from our team
+              </h2>
+            </div>
+            <a href="" class="chance__block main-block__button"
+              ><img src="img/icons/check.svg" alt="Icon" />Take a scoring
+              test</a
+            >
+          </div>
+        </div>
+        <div class="page__testimonials testimonial">
+          <div class="testimonial__container">
+            <h1 class="testimonial__title">Testimonials</h1>
+            <div class="testimonial__content-testimonial">
+              <div class="testimonial__content">
+                <div class="testimonial__about">
+                  <div class="testimonial__person">
+                    <img
+                      class="testimonial__foto"
+                      src="img/testimonials/foto.png"
+                      alt="Foto"
+                    />
+                    <div class="testimonial__name">Adriano K.</div>
+                  </div>
+                  <div class="testimonial__fields">
+                    <div class="testimonial__field">Co-Founder</div>
+                    <div class="testimonial__field">CEO</div>
+                    <div class="testimonial__field">Game developer</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial__testimonial">
+                <div class="testimonial__text">
+                  I was referred to Immigram by my Ukrainian colleague. What has
+                  surprised me the most? I was amazed how the Immigram Team
+                  understood the twists and turns of AI and algorithms I worked
+                  on at companies like Goldman Sachs and Nomura
+                </div>
+                <div class="testimonial__text-second">
+                  I have a broad experience in academic research with more than
+                  30 published journal papers and book chapters related to Data
+                  Science, Machine Learning, Statistical Methods, Optimization,
+                  and Finance.I was surprised that Immigram Team were able to
+                  compile my research papers in a way that you could tell they
+                  comprehended my scientific activity and not just bibliographe
+                  it.At the end of the day, I came to Immigram for a visa and
+                  got the visa
+                </div>
+              </div>
+              <img
+                class="testimonial__ellipse"
+                src="img/testimonials/Ellipse.png"
+                alt="Ellipse"
+              />
+              <img
+                class="testimonial__paws"
+                src="img/testimonials/paws.svg"
+                alt="Paws"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="page__faq faq">
+          <div class="faq__container">
+            <h1 class="faq__title">FAQ</h1>
+            <div class="faq__item">
+              <div class="faq__block">
+                <button class="faq__question">
+                  What does a Global Talent Visa offer?
+                  <img
+                    class="faq__arrow"
+                    src="img/faq/arrow-down.svg"
+                    alt="Arrow-down"
+                  />
+                </button>
+                <div class="faq__answer">
+                  <p>
+                    Global Talent candidates in digital tech will need to attach
+                    a completed Visa application form, which includes: <br />
+                    • A Personal Statement;<br />
+                    • A CV, containing your experience, contributions to the
+                    relevant field, publications, etc; <br />
+                    • At least 3 letters of recommendation from recognised
+                    leaders in the tech industry; <br />
+                    • Up to 10 pieces of evidence in relation to the relevant
+                    Eligibility Criteria.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__block">
+                <button class="faq__question">
+                  Who can apply for the Global Talent Visa?
+                  <img
+                    class="faq__arrow"
+                    src="img/faq/arrow-down.svg"
+                    alt="Arrow-down"
+                  />
+                </button>
+                <div class="faq__answer"></div>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__block">
+                <button class="faq__question">
+                  What does Immigram offer?
+                  <img
+                    class="faq__arrow"
+                    src="img/faq/arrow-down.svg"
+                    alt="Arrow-down"
+                  />
+                </button>
+                <div class="faq__answer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__logo-text">
+            <div class="footer__logo">
+              <img src="img/header/logo.svg" alt="Logo" />
+            </div>
+            <div class="fotter__vertical-line"></div>
+            <div class="footer__text">
+              All immigration advice is provided by OISC regulated partner. Ref
+              No. F202100337
+            </div>
+          </div>
+          <div class="footer__content">
+            <nav class="footer__menu menu-footer">
+              <ul class="menu-footer__list">
+                <div class="menu__title">Main menu</div>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link menu__link--dropdown"
+                    >Services<img
+                      class="menu__img"
+                      src="img/icons/arrow-down.svg"
+                      alt="Dropdown"
+                  /></a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Blog</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__address address">
+              <div class="address__title menu__title">Adress</div>
+              <div class="address__address">
+                132-134 Lots Rd, Chelsea, London SW10 0RJ
+              </div>
+            </div>
+          </div>
+          <div class="footer__follow follow">
+            <div class="follow__title menu__title">Follow us</div>
+            <div class="follow__links">
+              <button class="follow__link">
+                <img src="img/footer/linkedIn.svg" alt="LinkedIn" />
+              </button>
+              <button class="follow__link">
+                <img src="img/footer/facebook.svg" alt="Facebook" />
+              </button>
+              <button class="follow__link">
+                <img src="img/footer/instagram.svg" alt="Instagram" />
+              </button>
+              <button class="follow__link">
+                <img src="img/footer/telegram.svg" alt="Telegram" />
+              </button>
+            </div>
+          </div>
+          <img class="footer__arrow" src="img/footer/arrow.svg" alt="Arrow" />
+        </div>
+      </footer>
     </div>
-   </main>
-   <footer class="footer">footer</footer>
-  </div>
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
