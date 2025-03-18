@@ -1179,8 +1179,8 @@ li {
 
 @media (max-width: 360px) {
   .testimonial__container {
-    margin-bottom: 100px;
-    max-width: 340px;
+      margin-bottom: 6.3rem;
+      max-width: 21.3rem;
   }
 
   .testimonial__title {
