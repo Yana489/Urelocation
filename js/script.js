@@ -9,27 +9,34 @@ const nextButton = document.getElementById("next-slide");
 const sliderWrapper = document.querySelector(".start__slider-wrapper");
 const scrollAmount = 300;
 
+const leftButton = document.getElementById("left-slide");
+const rightButton = document.getElementById("right-slide");
+const wrapper = document.querySelector(".testimonial__wrapper");
+const contentItems = document.querySelectorAll(".testimonial__content-wrapper");
+const amount = contentItems[0].offsetWidth;
+
 const faqItems = document.querySelectorAll(".faq__item");
 
 const footerArrow = document.querySelector(".footer__arrow");
 
-burgerButton.addEventListener("click", function () {
-  this.classList.toggle("active");
+burgerButton.addEventListener("click", () => {
+  burgerButton.classList.toggle("active");
   navMenu.classList.toggle("open");
 });
 
-dropdownLink.addEventListener("click", function () {
+dropdownLink.addEventListener("click", () => {
   sublist.classList.toggle("active");
+  dropdownLink.classList.toggle("change");
 });
 
-prevButton.addEventListener("click", function () {
+prevButton.addEventListener("click", () => {
   sliderWrapper.scrollBy({
     left: -scrollAmount,
     behavior: "smooth",
   });
 });
 
-nextButton.addEventListener("click", function () {
+nextButton.addEventListener("click", () => {
   sliderWrapper.scrollBy({
     left: scrollAmount,
     behavior: "smooth",
@@ -49,7 +56,21 @@ faqItems.forEach((item) => {
   });
 });
 
-footerArrow.addEventListener("click", function () {
+leftButton.addEventListener("click", () => {
+  wrapper.scrollBy({
+    left: -amount,
+    behavior: "smooth",
+  });
+});
+
+rightButton.addEventListener("click", () => {
+  wrapper.scrollBy({
+    left: amount,
+    behavior: "smooth",
+  });
+});
+
+footerArrow.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
