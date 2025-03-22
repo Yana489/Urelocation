@@ -1237,6 +1237,7 @@ li {
 
 .testimonial__slider-icon {
   top: 55%;
+  position: absolute;
   height: 3.4rem;
   width: 3.4rem;
   background: var(--color-button-text);
