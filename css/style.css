@@ -720,8 +720,7 @@ li {
 
 .start__container {
   max-width: 89.4rem;
-  margin: 0 auto;
-  margin-bottom: 3.8rem;
+  margin: 0 auto 3.8rem;
   position: relative;
 }
 
@@ -1001,10 +1000,9 @@ li {
 
 .steps__container {
   max-width: 82.9rem;
-  margin: 0 auto;
   padding-left: 3rem;
   display: flex;
-  margin-bottom: 5rem;
+  margin: 0 auto 5rem;
 }
 
 .block-steps {
@@ -1207,8 +1205,7 @@ li {
 
 .chance__container {
   line-height: 100%;
-  margin: 0 auto;
-  margin-bottom: 5rem;
+  margin: 0 auto 5rem;
 }
 
 .chance__block {
@@ -1232,8 +1229,7 @@ li {
 
 .testimonial__container {
   max-width: 90rem;
-  margin: 0 auto;
-  margin-bottom: 3.8rem;
+  margin: 0 auto 3.8rem;
   position: relative;
   padding: 0 30px;
   overflow: hidden;
@@ -1241,7 +1237,6 @@ li {
 
 .testimonial__slider-icon {
   top: 55%;
-  position: absolute;
   height: 3.4rem;
   width: 3.4rem;
   background: var(--color-button-text);
@@ -1432,9 +1427,8 @@ li {
 
 .faq__container {
   max-width: 81.25rem;
-  margin: 0 auto;
   padding: 0 30px;
-  margin-bottom: 5rem;
+  margin: 0 auto 5rem;
 }
 
 .faq__title {
@@ -1680,9 +1674,8 @@ li {
 
   .footer__logo-text {
     max-width: 255px;
-    margin: 0 auto;
     gap: 13px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
 
   .footer__vertical-line {
