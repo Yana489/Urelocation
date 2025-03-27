@@ -19,60 +19,62 @@ const faqItems = document.querySelectorAll(".faq__item");
 
 const footerArrow = document.querySelector(".footer__arrow");
 
-burgerButton.addEventListener("click", () => {
+const toggleBurgerMenu = () => {
   burgerButton.classList.toggle("active");
   navMenu.classList.toggle("open");
-});
+};
 
-dropdownLink.addEventListener("click", () => {
+const toggleDropdown = () => {
   sublist.classList.toggle("active");
   dropdownLink.classList.toggle("change");
-});
+};
 
-prevButton.addEventListener("click", () => {
+const scrollSlider = (direction) => {
   sliderWrapper.scrollBy({
-    left: -scrollAmount,
+    left: direction * scrollAmount,
     behavior: "smooth",
   });
-});
+};
 
-nextButton.addEventListener("click", () => {
-  sliderWrapper.scrollBy({
-    left: scrollAmount,
-    behavior: "smooth",
-  });
-});
+const setupFAQItems = () => {
+  faqItems.forEach(setupFAQItem);
+};
 
-faqItems.forEach((item) => {
+const setupFAQItem = (item) => {
   const questionButton = item.querySelector(".faq__question");
   const answer = item.querySelector(".faq__answer");
   const arrow = item.querySelector(".faq__arrow");
   const faqBlock = item.querySelector(".faq__block");
 
-  questionButton.addEventListener("click", () => {
-    answer.classList.toggle("show");
-    arrow.classList.toggle("rotated");
-    faqBlock.classList.toggle("active");
-  });
-});
+  questionButton.addEventListener("click", () => toggleFAQItem(answer, arrow, faqBlock));
+};
 
-leftButton.addEventListener("click", () => {
+const toggleFAQItem = (answer, arrow, faqBlock) => {
+  answer.classList.toggle("show");
+  arrow.classList.toggle("rotated");
+  faqBlock.classList.toggle("active");
+};
+
+const scrollTestimonials = (direction) => {
   wrapper.scrollBy({
-    left: -amount,
+    left: direction * amount,
     behavior: "smooth",
   });
-});
+};
 
-rightButton.addEventListener("click", () => {
-  wrapper.scrollBy({
-    left: amount,
-    behavior: "smooth",
-  });
-});
-
-footerArrow.addEventListener("click", () => {
+const scrollToTop = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
-});
+};
+
+document.addEventListener("DOMContentLoaded", setupFAQItems);
+
+burgerButton.addEventListener("click", toggleBurgerMenu);
+dropdownLink.addEventListener("click", toggleDropdown);
+prevButton.addEventListener("click", () => scrollSlider(-1));
+nextButton.addEventListener("click", () => scrollSlider(1));
+leftButton.addEventListener("click", () => scrollTestimonials(-1));
+rightButton.addEventListener("click", () => scrollTestimonials(1));
+footerArrow.addEventListener("click", scrollToTop);
