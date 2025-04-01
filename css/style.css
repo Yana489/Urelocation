@@ -979,6 +979,7 @@ li {
     background-color: #e7eefa;
     border-radius: 3.1rem;
     color: var(--color-text);
+    cursor: pointer;
 }
 
 .button-group__button:hover {
@@ -1048,6 +1049,7 @@ li {
     color: #82859e;
     border-radius: 0.8rem;
     align-items: center;
+    cursor: pointer;
 }
 
 .select__item:first-child img {
@@ -1189,6 +1191,7 @@ li {
     justify-content: center;
     white-space: nowrap;
     margin-top: auto;
+    cursor: pointer;
 }
 
 .block-screen__form-button:hover {
